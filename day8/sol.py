@@ -25,7 +25,6 @@ def part2():
     table = {line[0:3]: (line[7:10], line[12:15]) for line in lines[2:]}
 
     pos = [k for k in table.keys() if k[2] == 'A']
-    print(pos)
     steps = 0
     min_steps = [0] * len(pos)
     while not all(min_steps):
@@ -41,7 +40,7 @@ def part2():
 
 
 def main():
-    # part1()
+    part1()
     part2()
 
 
